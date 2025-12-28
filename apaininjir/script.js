@@ -16,7 +16,7 @@ const API_CONFIG = {
         param: "username"
     },
     instagram: {
-        url: "https://api.siputzx.my.id/api/stalk/instagram",
+        url: "https://api.ryzumi.vip/api/stalk/instagram",
         param: "username"
     },
     mahasiswa: {
