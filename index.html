@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Stalker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./apaininjir/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-search"></i> Social Media Stalker</h1>
+            <p class="subtitle">Dapatkan informasi akun dari berbagai platform sosial media</p>
+        </header>
+
+        <div class="stalker-form">
+            <div class="platform-selector">
+                <div class="platform-option active" data-platform="tiktok">
+                    <i class="fab fa-tiktok platform-icon"></i>
+                    <span class="platform-name">TikTok</span>
+                </div>
+                <div class="platform-option" data-platform="instagram">
+                    <i class="fab fa-instagram platform-icon"></i>
+                    <span class="platform-name">Instagram</span>
+                </div>
+                <div class="platform-option" data-platform="github">
+                    <i class="fab fa-github platform-icon"></i>
+                    <span class="platform-name">GitHub</span>
+                </div>
+                <div class="platform-option" data-platform="npm">
+                    <i class="fab fa-npm platform-icon"></i>
+                    <span class="platform-name">NPM</span>
+                </div>
+                <div class="platform-option" data-platform="minecraft">
+                    <i class="fas fa-cube platform-icon"></i>
+                    <span class="platform-name">Minecraft</span>
+                </div>
+                <div class="platform-option" data-platform="mahasiswa">
+                    <i class="fas fa-graduation-cap platform-icon"></i>
+                    <span class="platform-name">Mahasiswa</span>
+                </div>
+                <div class="platform-option" data-platform="twitter">
+                    <i class="fab fa-twitter platform-icon"></i>
+                    <span class="platform-name">Twitter</span>
+                </div>
+                <div class="platform-option" data-platform="youtube">
+                    <i class="fab fa-youtube platform-icon"></i>
+                    <span class="platform-name">YouTube</span>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="usernameInput" placeholder="Masukkan username atau nama...">
+                <button id="stalkButton">
+                    <i class="fas fa-search"></i> Stalk Akun
+                </button>
+            </div>
+        </div>
+
+        <div class="loading" id="loadingIndicator">
+            <div class="spinner"></div>
+            <p>Mengambil data dari API...</p>
+        </div>
+
+        <div class="error-message" id="errorMessage">
+            <i class="fas fa-exclamation-triangle"></i>
+            <p id="errorText">Terjadi kesalahan saat mengambil data. Silakan coba lagi.</p>
+        </div>
+
+        <div class="result-container" id="resultContainer"></div>
+
+        <footer>
+            <p>Dibuat dengan <i class="fas fa-heart" style="color:#ff0080;"></i> menggunakan API dari FikXzMods & Siputzx</p>
+            <p>© 2025 Social Media Stalker | <i class="fab fa-telegram"></i> Developer: @YanOZX</p>
+            <p>Hanya untuk tujuan edukasi</p>
+        </footer>
+    </div>
+
+    <script src="/apaininjir/script.js"></script>
+</body>
+</html>
